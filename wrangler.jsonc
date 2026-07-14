@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "imperialambitionswiki",
+  "workers_dev": true,
+  "preview_urls": true,
+  "keep_vars": true,
+  "vars": {
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-KRQL6TXT5T"
+  },
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "routes": [
+    {
+      "pattern": "imperialambitions.wiki",
+      "custom_domain": true,
+      "zone_name": "imperialambitions.wiki"
+    },
+    {
+      "pattern": "www.imperialambitions.wiki",
+      "custom_domain": true,
+      "zone_name": "imperialambitions.wiki"
+    }
+  ],
+  "build": {
+    "command": "pnpm run cf:build"
+  },
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
+}

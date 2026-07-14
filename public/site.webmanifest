@@ -1,0 +1,16 @@
+{
+  "name": "Imperial Ambitions Wiki",
+  "short_name": "Imperial Ambitions",
+  "description": "Imperial Ambitions guides for economy, society, agents, colonies, research, diplomacy, battles and ships.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#e3b95f",
+  "background_color": "#091318",
+  "display": "standalone"
+}
