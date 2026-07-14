@@ -123,7 +123,7 @@ export function ImperialAmbitionsHomePage({ locale }: { locale?: Locale }) {
                 {content.badge}
               </Badge>
               <h1 className="mt-4 max-w-4xl font-display text-4xl font-black leading-[1.03] md:text-6xl">
-                Build an empire that can survive its own ambition
+                {content.title}
               </h1>
               <p className="mt-4 max-w-3xl text-base leading-8 text-[#a9c0bc] md:text-lg">
                 {content.intro}
