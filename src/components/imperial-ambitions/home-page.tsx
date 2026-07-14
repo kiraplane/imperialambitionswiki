@@ -22,7 +22,6 @@ import {
   Compass,
   ExternalLink,
   Factory,
-  Landmark,
   Microscope,
   Scale,
   Shield,
@@ -105,69 +104,94 @@ export function ImperialAmbitionsHomePage({ locale }: { locale?: Locale }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#091318] text-[#f6ecd2]">
+    <div className="min-h-screen overflow-x-clip bg-[#091318] text-[#f6ecd2]">
       <JsonLd data={graph} />
-      <Container className="px-4 py-8 md:py-12">
+      <section className="relative overflow-hidden border-[#31545b] border-b">
+        <Image
+          src={siteFacts.officialHeroImage}
+          alt="Imperial Ambitions exploration map and New World coastline"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,19,24,.98)_0%,rgba(9,19,24,.84)_48%,rgba(9,19,24,.58)_100%)]" />
+        <Container className="relative px-4 py-8 lg:py-10">
+          <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(380px,.78fr)]">
+            <div className="min-w-0">
+              <Badge className="w-fit bg-[#e3b95f] text-[#091318]">
+                {content.badge}
+              </Badge>
+              <h1 className="mt-4 max-w-4xl font-display text-4xl font-black leading-[1.03] md:text-6xl">
+                Build an empire that can survive its own ambition
+              </h1>
+              <p className="mt-4 max-w-3xl text-base leading-8 text-[#a9c0bc] md:text-lg">
+                {content.intro}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button
+                  asChild
+                  className="h-auto whitespace-normal bg-[#e3b95f] px-4 py-3 text-[#091318] hover:bg-[#63b7a9]"
+                >
+                  <LocaleLink href="/guides/beginner-guide">
+                    {content.primaryCta}
+                    <ArrowRight className="size-4 shrink-0" />
+                  </LocaleLink>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="h-auto whitespace-normal border-[#63b7a9] bg-[#091318]/60 px-4 py-3 text-[#f6ecd2] hover:bg-[#17343a]"
+                >
+                  <LocaleLink href="/guides/production-and-labor">
+                    {content.secondaryCta}
+                  </LocaleLink>
+                </Button>
+              </div>
+              <QuickWikiLinks className="mt-5" />
+              <p className="mt-4 max-w-3xl text-sm leading-6 text-[#8fa9a5]">
+                {content.scopeNote}
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-xl border border-[#31545b] bg-black shadow-2xl shadow-black/40">
+              <iframe
+                className="aspect-video w-full"
+                src={`https://www.youtube-nocookie.com/embed/${siteFacts.officialTrailerId}?rel=0`}
+                title="Official Imperial Ambitions trailer"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+              <p className="bg-[#10242a] px-4 py-3 text-sm text-[#a9c0bc]">
+                Official trailer from {siteFacts.creator}, the Steam-linked
+                developer channel.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Container className="px-4 py-8 lg:py-10">
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_272px]">
           <main className="min-w-0 space-y-8">
-            <section className="overflow-hidden rounded-2xl border border-[#31545b] bg-[#10242a]">
-              <div className="grid lg:grid-cols-[1.05fr_.95fr]">
-                <div className="flex flex-col justify-center p-6 md:p-9">
-                  <Badge className="w-fit bg-[#e3b95f] text-[#091318]">
-                    {content.badge}
-                  </Badge>
-                  <h1 className="mt-5 max-w-3xl font-display text-4xl font-black leading-[1.05] md:text-6xl">
-                    Build an empire that can survive its own ambition
-                  </h1>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-[#a9c0bc] md:text-lg">
-                    {content.intro}
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <Button
-                      asChild
-                      className="h-auto bg-[#e3b95f] px-5 py-3 text-[#091318] hover:bg-[#63b7a9]"
-                    >
-                      <LocaleLink href="/guides/beginner-guide">
-                        {content.primaryCta}
-                        <ArrowRight className="ml-2 size-4" />
-                      </LocaleLink>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="h-auto border-[#63b7a9] bg-transparent px-5 py-3 text-[#f6ecd2] hover:bg-[#17343a]"
-                    >
-                      <LocaleLink href="/guides/production-and-labor">
-                        {content.secondaryCta}
-                      </LocaleLink>
-                    </Button>
-                  </div>
-                  <QuickWikiLinks className="mt-6" />
-                </div>
-
-                <div className="relative min-h-[300px] border-[#31545b] border-t lg:min-h-[520px] lg:border-t-0 lg:border-l">
-                  <Image
-                    src={siteFacts.officialHeroImage}
-                    alt="Imperial Ambitions exploration map and New World coastline"
-                    fill
-                    priority
-                    sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,19,24,.72)_0%,rgba(9,19,24,.05)_65%),linear-gradient(0deg,rgba(9,19,24,.78)_0%,transparent_45%)]" />
-                  <div className="absolute inset-x-5 bottom-5 rounded-xl border border-white/15 bg-[#091318]/85 p-4 backdrop-blur">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#63b7a9]">
-                      Released July 13, 2026
-                    </p>
-                    <p className="mt-1 font-display text-xl font-bold">
-                      Steam App 2219390 · Windows & macOS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
             <MobileWikiNav currentPath="/" locale={locale} />
+
+            <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {facts.map((fact) => (
+                <div
+                  key={fact.label}
+                  className="rounded-xl border border-[#31545b] bg-[#10242a] p-4"
+                >
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#63b7a9]">
+                    {fact.label}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#a9c0bc]">
+                    {fact.value}
+                  </p>
+                </div>
+              ))}
+            </section>
 
             <section className="rounded-2xl border border-[#31545b] bg-[#10242a] p-5 md:p-7">
               <div className="flex flex-wrap items-end justify-between gap-4">
@@ -202,49 +226,6 @@ export function ImperialAmbitionsHomePage({ locale }: { locale?: Locale }) {
                     </p>
                   </LocaleLink>
                 ))}
-              </div>
-            </section>
-
-            <section className="grid gap-5 md:grid-cols-[1.25fr_.75fr]">
-              <div className="overflow-hidden rounded-2xl border border-[#31545b] bg-[#10242a]">
-                <div className="border-[#31545b] border-b p-5 md:p-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#63b7a9]">
-                    Official trailer
-                  </p>
-                  <h2 className="mt-2 font-display text-2xl font-black">
-                    See the people, ledgers and campaign map in motion
-                  </h2>
-                </div>
-                <iframe
-                  className="aspect-video w-full bg-black"
-                  src={`https://www.youtube-nocookie.com/embed/${siteFacts.officialTrailerId}?rel=0`}
-                  title="Official Imperial Ambitions trailer"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-
-              <div className="rounded-2xl border border-[#31545b] bg-[#10242a] p-5 md:p-6">
-                <Landmark className="size-7 text-[#e3b95f]" />
-                <h2 className="mt-4 font-display text-2xl font-black">
-                  The game at a glance
-                </h2>
-                <dl className="mt-5 grid gap-4">
-                  {facts.map((fact) => (
-                    <div
-                      key={fact.label}
-                      className="border-[#31545b] border-t pt-3"
-                    >
-                      <dt className="font-semibold text-[#63b7a9] text-xs uppercase tracking-[0.14em]">
-                        {fact.label}
-                      </dt>
-                      <dd className="mt-1 text-sm leading-6 text-[#a9c0bc]">
-                        {fact.value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
               </div>
             </section>
 
