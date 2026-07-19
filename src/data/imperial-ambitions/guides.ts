@@ -78,6 +78,75 @@ const videos: Record<string, GuideVideo> = {
 
 export const guides: Guide[] = [
   {
+    slug: 'day-5-patch-map-seeds-music-population',
+    path: '/guides/day-5-patch-map-seeds-music-population',
+    title: 'Imperial Ambitions Day 5 Patch',
+    seoTitle: 'Imperial Ambitions Day 5 Patch - Map Seeds & Population',
+    seoDescription:
+      'See Imperial Ambitions Day 5 changes for map seeds, music, population growth, spearmen, disbanding, agents, harvesting and controls.',
+    summary:
+      'Day 5 adds reusable map seeds and custom music folders, changes spearmen and population control, and fixes harvesting, building and input problems.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/imperial-ambitions/guides/trailer.jpg',
+    publishedAt: '2026-07-19',
+    updatedAt: '2026-07-19',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 17 Day 5 Steam patch notes. Exact balance remains live-build final.',
+    videoSearchQueries: [
+      'Imperial Ambitions Day 5 patch',
+      'Imperial Ambitions map seeds population guide',
+    ],
+    tags: ['Patch notes', 'Map seeds', 'Population'],
+    relatedRoutes: [
+      '/guides/day-3-patch-notes',
+      '/guides/production-labor-guide',
+      '/guides/warfare-army-guide',
+      '/guides/diplomacy-agents-guide',
+    ],
+    body: [
+      {
+        heading: 'Map seeds and music controls',
+        paragraphs: [
+          'Map regeneration now accepts seeds, so players can replay the same world or share a setup for strategy comparison. Record the seed before regeneration and change one opening decision at a time if the goal is to compare routes.',
+          'AI-generated music was removed and replaced mainly with Baroque and Classical music. A custom music-folder path is available for players who prefer their own local soundtrack.',
+        ],
+      },
+      {
+        heading: 'Population, spearmen and disbanding',
+        paragraphs: [
+          'Spearmen now require peasants and have lower melee attack. The new Disband button returns a unit to its original social class and settles it near one of the player towns, so disbanding can recover labor but should not be used carelessly before a military need.',
+          'Malthusian Trap is optional and off by default. With it disabled, population must be added manually when granary growth reaches 100 percent. This makes the granary button part of the normal economy loop.',
+        ],
+      },
+      {
+        heading: 'Control, agent and harvesting fixes',
+        paragraphs: [
+          'Numpad star now switches towns, visiting enemy land with agents no longer creates diplomatic tension, and WASD should not scroll the map while typing.',
+          'The patch also fixes duplicate Builder buttons, distant harvesting beside roads, incorrect settler resource text, fish placement and additional exit crashes. Retest the affected save before rebuilding roads or replacing workers.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Can Imperial Ambitions maps use seeds now?',
+        answer:
+          'Yes. Day 5 adds a seed field to map regeneration so worlds can be reused or shared.',
+      },
+      {
+        question: 'What does Disband do?',
+        answer:
+          'It returns a unit to its original social class and settles it near a player town.',
+      },
+      {
+        question: 'Is Malthusian Trap enabled by default?',
+        answer:
+          'No. It is optional and off by default in the Day 5 patch.',
+      },
+    ],
+  },
+  {
     slug: 'day-3-patch-notes',
     path: '/guides/day-3-patch-notes',
     title: 'Imperial Ambitions Day 3 Patch Notes',
