@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-07-14';
+export const checkedAt = '2026-07-17';
 
 export const siteFacts = {
   siteName: 'Imperial Ambitions Wiki',
@@ -59,6 +59,14 @@ export const gameFacts: GameFact[] = [
 ];
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Official Day 3 patch notes',
+    url: 'https://steamcommunity.com/games/2219390/announcements/detail/1838407329253535',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for the July 15 zone-of-control, hill landing, pathfinding, militia, border, road and grudge changes.',
+  },
   {
     type: 'official',
     label: 'Imperial Ambitions Steam store',

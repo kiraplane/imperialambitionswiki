@@ -78,6 +78,75 @@ const videos: Record<string, GuideVideo> = {
 
 export const guides: Guide[] = [
   {
+    slug: 'day-3-patch-notes',
+    path: '/guides/day-3-patch-notes',
+    title: 'Imperial Ambitions Day 3 Patch Notes',
+    seoTitle: 'Imperial Ambitions Day 3 Patch - Balance & Fixes',
+    seoDescription:
+      'Review Imperial Ambitions Day 3 balance and bug fixes for zone of control, hills, ships, militia, borders, roads and grudge.',
+    summary:
+      'The Day 3 patch lowers movement friction around enemy zones and hill landings while fixing hidden-ship pathfinding, militia, town animation, border and grudge problems.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/imperial-ambitions/guides/trailer.jpg',
+    publishedAt: '2026-07-17',
+    updatedAt: '2026-07-17',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 15 Steam Day 3 patch announcement.',
+    videoSearchQueries: [
+      'Imperial Ambitions Day 3 patch',
+      'Imperial Ambitions patch notes July 2026',
+    ],
+    tags: ['Patch notes', 'Movement', 'Militia'],
+    relatedRoutes: [
+      '/guides/battles-and-regiments',
+      '/guides/ships-and-seafaring',
+      '/guides/diplomacy-and-grudge',
+      '/guides/towns-and-logistics',
+    ],
+    body: [
+      {
+        heading: 'Movement and landing costs are lower',
+        paragraphs: [
+          'The Day 3 balance pass decreases zone-of-control movement cost, so approaching enemy units should consume less extra action points. Disembarking on hills is also less costly. Re-check old invasion routes before adding more movement upgrades solely to compensate for launch-day friction.',
+          'These changes do not remove positional risk. Keep a legal retreat and enough action points for the next formation decision instead of spending the entire turn on the approach.',
+        ],
+      },
+      {
+        heading: 'Pathfinding and map-state fixes',
+        paragraphs: [
+          'Ships outside the player’s vision are no longer evaluated for pathfinding. Town-building animations are fixed, borders update immediately after roads are built, and non-soldier units no longer increase grudge.',
+          'If a border or diplomatic state looked wrong before the patch, update and reload the save before rebuilding roads or changing policy. The non-soldier grudge fix also makes it safer to separate civilian movement from military escalation when diagnosing a relationship change.',
+        ],
+      },
+      {
+        heading: 'Militia resettling is easier',
+        paragraphs: [
+          'Militia choosing to resettle has been made easier, although the developer notes that militia garrisons are still being addressed. Treat resettling as improved rather than fully solved.',
+          'Keep a backup before reorganizing a critical garrison and watch the official news feed for the follow-up. A remaining garrison problem should not be presented as fixed merely because the broader militia behavior changed.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Did Imperial Ambitions reduce zone-of-control costs?',
+        answer:
+          'Yes. The Day 3 patch lowers the extra action-point cost when approaching enemy units.',
+      },
+      {
+        question: 'Are militia garrisons fully fixed?',
+        answer:
+          'No. Resettling was made easier, but the official note says militia garrisons are still being addressed.',
+      },
+      {
+        question: 'Do roads update borders immediately now?',
+        answer:
+          'Yes. The Day 3 patch says borders now update as soon as roads are built.',
+      },
+    ],
+  },
+  {
     slug: 'beginner-guide',
     path: '/guides/beginner-guide',
     title: 'Imperial Ambitions Beginner Guide: Build a Stable First Empire',
