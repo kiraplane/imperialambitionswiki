@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-07-20';
+export const checkedAt = '2026-07-21';
 
 export const siteFacts = {
   siteName: 'Imperial Ambitions Wiki',
@@ -59,6 +59,14 @@ export const gameFacts: GameFact[] = [
 ];
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Imperial Ambitions Day 7 Patch',
+    url: 'https://steamcommunity.com/games/2219390/announcements/detail/1838407329265197',
+    checkedAt,
+    confidence: 'high',
+    note: 'Official July 20 patch for controls, diplomacy, Merchant upgrades, event-log stats, economy defaults, resources, disband confirmation and production fixes.',
+  },
   {
     type: 'official',
     label: 'Official Day 3 patch notes',

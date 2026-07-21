@@ -1978,6 +1978,70 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'day-7-patch-controls-diplomacy-economy',
+    path: '/guides/day-7-patch-controls-diplomacy-economy',
+    title: 'Imperial Ambitions Day 7 Patch',
+    seoTitle: 'Imperial Ambitions Day 7 Patch - Controls and Economy',
+    seoDescription:
+      'Review Imperial Ambitions Day 7 changes to controls, diplomacy, merchants, event stats, Malthusian Trap, resources, disbanding and production.',
+    summary:
+      'Day 7 improves readability and camera control while changing opening diplomacy, merchant options, economy defaults, resources, disbanding and production behavior.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/imperial-ambitions/guides/trailer.jpg',
+    publishedAt: '2026-07-21',
+    updatedAt: '2026-07-21',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 20 Day 7 Steam patch notes. Current in-game tooltips remain final for save-specific behavior.',
+    videoSearchQueries: [
+      'Imperial Ambitions Day 7 patch',
+      'Imperial Ambitions merchant slave master Malthusian Trap',
+    ],
+    tags: ['Patch notes', 'Diplomacy', 'Economy'],
+    relatedRoutes: [
+      '/guides/day-5-patch-map-seeds-music-population',
+      '/guides/production-and-labor',
+      '/guides/agents-and-upgrades',
+      '/guides/diplomacy-and-grudge',
+    ],
+    body: [
+      {
+        heading: 'Controls and selection are easier to read',
+        paragraphs: [
+          'Arrow keys now work like WASD, and numpad unit or town selection moves the camera to the selected target. Selected-unit banners remain lowered, while event reports and the Russian border color received readability improvements.',
+          'Use the improved selection flow to audit towns and agents before ending a turn rather than relying on memory across a large empire.',
+        ],
+      },
+      {
+        heading: 'Opening diplomacy is less uniformly hostile',
+        paragraphs: [
+          'Factions now begin at peace with most neighbors, with zero to two exceptions depending on difficulty. Factions sharing an enemy also accumulate less mutual grudge.',
+          'Recheck old opening-war assumptions. A shared enemy can create a safer trade or expansion window, but border violations and faction actions still need live diplomacy checks.',
+        ],
+      },
+      {
+        heading: 'Merchant and economy decisions changed',
+        paragraphs: [
+          'Merchants can take the Slave master upgrade to purchase slaves from owned towns. The event log now surfaces additional statistics, and Malthusian Trap is enabled by default, so population and food planning should be checked before copying an older opening.',
+          'The patch also adds horses north of the Black Sea, a disband confirmation, and fixes Agrarian engineer plantations, Herbalist tobacco, and poppy-seed production issues. Revisit blocked production chains after updating instead of rebuilding the whole economy.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Does the Day 7 patch change opening diplomacy?',
+        answer:
+          'Yes. Most factions begin at peace, with a small number of hostile neighbors based on difficulty.',
+      },
+      {
+        question: 'What should I recheck in an older guide?',
+        answer:
+          'Opening wars, Malthusian Trap settings, Merchant upgrades, horse access, disbanding, and affected plantation or crop chains.',
+      },
+    ],
+  },
 ];
 
 const featuredSlugs = new Set([
