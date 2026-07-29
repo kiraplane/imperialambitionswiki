@@ -78,6 +78,87 @@ const videos: Record<string, GuideVideo> = {
 
 export const guides: Guide[] = [
   {
+    slug: 'week-2-patch-labor-inflation-ai',
+    path: '/guides/week-2-patch-labor-inflation-ai',
+    title: 'Imperial Ambitions Week 2 Patch',
+    seoTitle: 'Imperial Ambitions Week 2 Patch - Labor, Inflation & AI',
+    seoDescription:
+      'Review the Imperial Ambitions Week 2 changes to labor classes, beverages, inflation, merchants, logistics, AI diplomacy and production.',
+    summary:
+      'Week 2 rewrites labor output, beverage and stimulant recipes, slows inflation, changes merchants and logistics, and improves AI trade, peace and army behavior.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/imperial-ambitions/screenshots/3.jpg',
+    publishedAt: '2026-07-27',
+    updatedAt: '2026-07-28',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official Steam Week 2 Patch. Exact values below are stated directly in the official notes.',
+    videoSearchQueries: [
+      'Imperial Ambitions Week 2 patch',
+      'Imperial Ambitions labor inflation merchants',
+    ],
+    tags: ['Week 2', 'Labor', 'Economy'],
+    relatedRoutes: [
+      '/guides/economy-and-production',
+      '/guides/social-classes-and-labor',
+      '/guides/merchants-trade-and-logistics',
+      '/guides/day-7-patch-controls-diplomacy-economy',
+    ],
+    body: [
+      {
+        heading: 'Recalculate labor around the new class values',
+        paragraphs: [
+          'Peasants now provide 1 labor, Apprentices 3 and Artisans 5. A Master provides 1 labor plus a 30 percent town-labor bonus. A town with the same population can therefore produce a different total after updating.',
+          'Check the labor total before expanding industry. Masters are most valuable where the percentage bonus applies to an already productive town, while Artisans supply the highest direct labor among the listed classes.',
+        ],
+      },
+      {
+        heading: 'Beverages and stimulants use new recipes',
+        paragraphs: [
+          'One wheat, grape, coffee or tea plus one labor now produces two beverages. Cigars are replaced by stimulants, and one tobacco or poppy plus one labor produces two stimulants.',
+          'Audit old production chains before adding buildings. A route designed around the former output can now over-supply inputs or reserve more labor than necessary.',
+        ],
+        bullets: [
+          'Recheck every beverage town after loading the patch.',
+          'Replace cigar assumptions with the stimulant chain.',
+          'Keep at least one turn of input stock while testing the new ratio.',
+        ],
+      },
+      {
+        heading: 'Inflation, merchants and logistics',
+        paragraphs: [
+          'Inflation now derives from existing spending and earnings but changes more slowly. Merchants require seasoning and are recruited from Apprentices. Multiple logistics levels can be changed in one turn, and invaded towns lose half their logistics level.',
+          'Plan trade policy over several turns instead of reacting to one price change. Protect logistics in border towns, because an invasion now damages the network even if the town is later recovered.',
+        ],
+      },
+      {
+        heading: 'AI, information and production fixes',
+        paragraphs: [
+          'Computer factions now adjust trade policy by grudge and strength, seek peace, recruit more balanced armies and establish colonies more effectively. Nearby town resources and revealed ores become visible to all factions.',
+          'The patch also fixes merchant-selection performance, memory issues, builder production, maize, tobacco, roads, trade-route cleanup, recruitment projections and several production displays. Retest a current save before rebuilding an economy around an old workaround.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What are the new labor values?',
+        answer:
+          'Peasants provide 1 labor, Apprentices 3, Artisans 5, and a Master provides 1 plus a 30 percent town-labor bonus.',
+      },
+      {
+        question: 'How are beverages produced now?',
+        answer:
+          'One wheat, grape, coffee or tea plus one labor produces two beverages.',
+      },
+      {
+        question: 'What replaced cigars?',
+        answer:
+          'The Week 2 patch replaces cigars with stimulants. One tobacco or poppy plus one labor produces two stimulants.',
+      },
+    ],
+  },
+  {
     slug: 'day-5-patch-map-seeds-music-population',
     path: '/guides/day-5-patch-map-seeds-music-population',
     title: 'Imperial Ambitions Day 5 Patch',
