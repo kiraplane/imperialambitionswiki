@@ -78,6 +78,92 @@ const videos: Record<string, GuideVideo> = {
 
 export const guides: Guide[] = [
   {
+    slug: 'english-longbowman-update-guide',
+    path: '/guides/english-longbowman-update-guide',
+    title: 'Imperial Ambitions English Longbowman Update',
+    seoTitle: 'Imperial Ambitions Longbowman Update Guide',
+    seoDescription:
+      'Plan around the English Longbowman, new tooltips, abandoned towns, forests, depression, ships, markets and combat changes in the August patch.',
+    summary:
+      'England gains the Longbowman in place of the Crossbowman, while the same patch improves information, abandoned-town rules, forests, depression, ships, markets, combat range, controls and several campaign fixes.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/imperial-ambitions/screenshots/3.jpg',
+    publishedAt: '2026-08-17',
+    updatedAt: '2026-08-17',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official August 16 Steam announcement. Live unit cards and save-specific tooltips remain final.',
+    videoSearchQueries: [
+      'Imperial Ambitions Longbowman update',
+      'Imperial Ambitions England Longbowman guide',
+    ],
+    tags: ['Longbowman', 'England', 'Patch'],
+    relatedRoutes: [
+      '/guides/battles-and-regiments',
+      '/guides/resources-and-production-chains',
+      '/guides/production-and-labor',
+      '/guides/week-2-patch-labor-inflation-ai',
+    ],
+    body: [
+      {
+        heading: 'England now recruits Longbowmen instead of Crossbowmen',
+        paragraphs: [
+          'The patch gives England a Longbowman special unit that replaces the normal Crossbowman. Existing England plans should therefore be reviewed at the ranged-unit step instead of assuming every faction shares the same crossbow roster.',
+          'Use the live recruitment card for cost and combat values. The official note confirms the replacement rule, but it does not publish a complete comparison table. Build the rest of the army around the terrain, enemy range and supply situation shown in the current campaign.',
+        ],
+        bullets: [
+          'Check the England recruitment list before reserving resources.',
+          'Compare the live Longbowman range and attack card with the target army.',
+          'Keep screening units between ranged troops and a fast enemy line.',
+        ],
+      },
+      {
+        heading: 'Read the expanded information before committing a turn',
+        paragraphs: [
+          'Nested tooltips can now open after hovering for two seconds. Grudge information shows current and next-turn values, and population-growth tooltips expose more of the factors behind the result. Use these explanations before changing taxes, diplomacy or labor based on one unexplained number.',
+          'The options menu also adds controls for moving through your own units and for surprise attacks or wars inside 40 tiles. Review those settings when a route or diplomatic action behaves differently from an older save or guide.',
+        ],
+      },
+      {
+        heading: 'Abandoned towns, forests and depression now need active planning',
+        paragraphs: [
+          'An abandoned town disappears after ten turns, while visiting it resets that timer. A town you intend to recover cannot be left indefinitely; put the deadline into the route plan and send a unit through before the final turn when the location still matters.',
+          'Cutting woods now removes the resource and grants logs, so forest clearing is a real conversion decision rather than free permanent income. Depression also lowers attack, making terrain checks more important before battle. Preserve woods needed for future production and avoid treating depressed terrain as a neutral fighting tile.',
+        ],
+      },
+      {
+        heading: 'Recheck ships, markets and ranged combat',
+        paragraphs: [
+          'Ships abandoned near shore return home after three years. The patch also adds Heal All, rebalances market behavior, makes extracted resources easier to see and increases normal Crossbowman range to two. These changes can invalidate an old recovery route, market habit or ranged formation without changing the campaign goal.',
+          'Load a current save, inspect one representative town and one army, then retest the workflow before changing the whole empire. Configurable key bindings and the accompanying fixes make this a good patch for replacing workarounds with the current interface.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Who gets the Longbowman in Imperial Ambitions?',
+        answer:
+          'England gets the Longbowman as a special unit replacing the standard Crossbowman.',
+      },
+      {
+        question: 'How long before an abandoned town disappears?',
+        answer:
+          'The official patch sets the timer to ten turns. Visiting the town resets that timer.',
+      },
+      {
+        question: 'Does cutting woods keep the forest resource?',
+        answer:
+          'No. The patch says cutting woods removes the resource and grants logs, so clear it only when the conversion is worthwhile.',
+      },
+      {
+        question: 'What is the normal Crossbowman range after the patch?',
+        answer:
+          'The official patch increases normal Crossbowman range to two. England uses its new Longbowman replacement, so check that live unit card separately.',
+      },
+    ],
+  },
+  {
     slug: 'week-2-patch-labor-inflation-ai',
     path: '/guides/week-2-patch-labor-inflation-ai',
     title: 'Imperial Ambitions Week 2 Patch',

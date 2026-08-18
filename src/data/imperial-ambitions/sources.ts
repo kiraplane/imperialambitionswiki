@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-08-15';
+export const checkedAt = '2026-08-17';
 
 export const siteFacts = {
   siteName: 'Imperial Ambitions Wiki',
@@ -59,6 +59,14 @@ export const gameFacts: GameFact[] = [
 ];
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Imperial Ambitions Longbowman Patch',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183784726',
+    checkedAt,
+    confidence: 'high',
+    note: 'Official August 16 patch adding the English Longbowman and changing tooltips, grudges, abandoned towns, forests, depression, ships, markets, combat range, controls and fixes.',
+  },
   {
     type: 'official',
     label: 'Imperial Ambitions Day 7 Patch',
